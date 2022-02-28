@@ -1,0 +1,10 @@
+str1 = input()
+lst = str1.split()
+print(lst)
+lst[0], lst[-1] = lst[-1], lst[0]
+print(lst)
+str1 = ''.join(lst)
+print(str(lst))
+x = str(lst)
+print(type(x))
+print(type(str(lst)))
