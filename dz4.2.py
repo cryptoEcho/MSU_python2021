@@ -1,13 +1,16 @@
-def SrZnach(str1, length):
-    if len(str1) == 0:
-        return
-    lst = list(str1)
-    x = int(lst[0])
-    lst.pop(0)
-    return x/length + SrZnach(''.join(lst), length)/length
+# Рудзянский Артемий
+def eat(count, summ):
+    x = int(input())
+    if x == 0:
+        return summ/count
+    count += 1
+    summ += x
+    return eat(count, summ)
 
-# x = input('Введите строку чисел ')
-x = '1234567890'
-SrZnach(x, len(x))
-#
-# print(result)
+
+count = 0
+summ = 0
+mean = eat(count, summ)
+print(mean)
+print('bye')
+

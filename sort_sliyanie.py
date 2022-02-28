@@ -1,3 +1,4 @@
+#
 a1 = list()
 i = 0
 for i in range(1, 10):
@@ -10,7 +11,7 @@ for i in range(1, 10):
     a2.append(i*2)
 print(a2)
 c = list()
-for i in range(1, len(a1)+len(a2)):
+for i in range(len(a1)-1):
     if a1[i] < a2[i]:
         c.append(a2[i])
         c.append(a1[i])

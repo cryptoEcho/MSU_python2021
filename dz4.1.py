@@ -1,12 +1,14 @@
-def nechet(str1):
-    if len(str1) == 0:
-        return
-    # if str1[0] == '0':
-    #     return
-    lst = list(str1)
-    if int(lst[0]) % 2 != 0:
-        print(lst[0])
-    lst.pop(0)
-    nechet(''.join(lst))
+# Рудзянский Артемий
+def eat(lst):
+    x = int(input())
+    if x == 0:
+        return lst
+    elif x % 2 == 1:
+        lst.append(x)
+    return eat(lst)
 
-nechet('123456789')
+
+lst = list()
+result = eat(list())
+print(*result)
+print('bye')

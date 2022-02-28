@@ -29,4 +29,4 @@ def top3(str1):
 
 
 top3('dvadcat chetire              3838888888888ppp')
-top3('mama')
+top3('fsfs')

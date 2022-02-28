@@ -1,0 +1,4 @@
+Pycharm Projects
+exit code
+finished
+Process

@@ -1,0 +1,12 @@
+str2=input()
+lst=str2.split()
+lst[0],lst[-1]=lst[-1],lst[0]
+new_lst='_'.join(lst)
+print((str(lst)))
+str2=(str(lst))
+t=str2.find(']')
+str2=str2.replace('[','')
+str2=str2.replace(']','')
+str2=str2.replace("'","")
+str2=str2.replace(",","")
+print(str2)
